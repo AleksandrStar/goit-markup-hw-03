@@ -80,7 +80,6 @@ h3 {
 }
 /* ------------- Шапка ------------- */
 .header {
-  margin-bottom: 200px;
 }
 
 /* Ссылка с логотипом */
@@ -134,7 +133,11 @@ h3 {
 /* ------------- Герой ------------- */
 /* Заглавие */
 .title {
-  margin-bottom: 30px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -148,7 +151,7 @@ h3 {
   text-align: center;
 }
 .button {
-  margin-bottom: 294px;
+  margin-bottom: 200px;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -169,7 +172,8 @@ h3 {
 /* ------------- Приемущества ------------- */
 /* Приемущества работы */
 .subtitle-priority {
-  margin-bottom: 10px;
+  padding-top: 94px;
+  padding-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   font-size: 14px;
@@ -178,7 +182,6 @@ h3 {
 }
 /* Текстовый контент к приемуществам работы */
 .text {
-  margin-bottom: 94px;
   font-weight: 400;
   line-height: 1.71;
   color: var(--secondary-color);
@@ -186,7 +189,7 @@ h3 {
 /* ------------- Работы ------------- */
 /* Чем мы занмаемся */
 .subject {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   font-weight: 700;
   line-height: 1.17;
   font-size: 36px;
@@ -196,6 +199,7 @@ h3 {
 /* ------------- Команда ------------- */
 /* Наша команда */
 .heading {
+  padding-bottom: 50px;
   font-weight: 700;
   line-height: 1.17;
   font-size: 36px;
@@ -204,6 +208,8 @@ h3 {
 }
 /* Список имен представителей нашей команди */
 .items {
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-weight: 500;
   line-height: 1.19;
   font-size: 16px;
@@ -212,6 +218,7 @@ h3 {
 }
 /* Должности представителей нашей команды */
 .position {
+  padding-bottom: 30px;
   font-weight: 400;
   line-height: 1.19;
   font-size: 16px;
@@ -242,6 +249,8 @@ h3 {
 }
 /* Контент фильтрующигося списком портфолио */
 .content {
+  padding-top: 20px;
+  padding-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -251,6 +260,7 @@ h3 {
 }
 /* Направление контента фильтрующигося списком портфолио */
 .content-direction {
+  padding-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
