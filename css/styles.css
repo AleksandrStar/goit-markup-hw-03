@@ -49,6 +49,8 @@ body {
 }
 /* Убираем маркеры неупорядоченого списка */
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 /* Убираем декорацыю текста */
@@ -72,21 +74,39 @@ h3 {
   padding-right: 15px;
   outline: 2px solid rgb(13, 201, 35);
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: aqua;
 }
 /* ------------- Шапка ------------- */
-.header {
+/* Flexbox для header */
+.navigation-list {
+  display: flex;
+  align-items: center;
 }
-
+.navigation-list .item + .item {
+  margin-left: 50px;
+}
+.contacts-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contacts-list .item + .item {
+  margin-left: 50px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 /* Ссылка с логотипом */
 .logo .accent {
   color: var(--accent-color);
 }
 .logo {
+  display: block;
+  padding: 24px 25px;
   color: var(--main-font);
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -95,6 +115,8 @@ h3 {
 }
 /* Список навигации */
 .navigation-list .link {
+  display: block;
+  padding: 32px 32px;
   font-weight: 500;
   line-height: 1.14;
   color: var(--basic-color);
@@ -109,6 +131,8 @@ h3 {
 }
 /* Список контактов */
 .contacts-list .email {
+  display: block;
+  padding: 32px 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -120,6 +144,8 @@ h3 {
   color: var(--accent-color);
 }
 .contacts-list .phone {
+  display: block;
+  padding: 32px 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -171,7 +197,13 @@ h3 {
 }
 /* ------------- Приемущества ------------- */
 /* Приемущества работы */
-.subtitle-priority {
+.priority-list .list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100 / 4 - 15px);
+}
+.subtitle {
+  display: flex;
   padding-top: 94px;
   padding-bottom: 10px;
   font-weight: 700;
@@ -182,6 +214,7 @@ h3 {
 }
 /* Текстовый контент к приемуществам работы */
 .text {
+  display: flex;
   font-weight: 400;
   line-height: 1.71;
   color: var(--secondary-color);
@@ -272,6 +305,8 @@ h3 {
   color: var(--accent-color);
 }
 .logo-footer {
+  width: 145px;
+  padding: 60px 1230px 20px 215px;
   color: var(--logo-footer);
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -280,6 +315,8 @@ h3 {
 }
 /* Список контактов футера */
 .contacts-list .email-footer {
+  padding-bottom: 9px;
+  width: 231px;
   line-height: 1.71;
   font-weight: 400;
   font-style: normal;
@@ -291,6 +328,8 @@ h3 {
   color: var(--accent-color);
 }
 .contacts-list .phone-footer {
+  padding-bottom: 60px;
+  width: 231px;
   line-height: 1.71;
   font-weight: 400;
   font-style: normal;
@@ -303,6 +342,8 @@ h3 {
 }
 /* Почтовый адрес */
 .office {
+  padding-bottom: 9px;
+  width: 231px;
   font-weight: 400;
   line-height: 1.71;
   font-style: normal;
