@@ -202,36 +202,19 @@ img {
 /* ------------- Приемущества ------------- */
 /* Приемущества работы */
 
-.container .priority-list {
-  flex-direction: row 
-  flex-basis: calc(100% / 4);
-  
+.subtitle-text > {
+}
+.priority-list {
 }
 
-.subtitle-text .scroll-subtitle {
- flex-direction: row 
-  flex-basis: calc(100% / 4);
-}
-.subtitle-text .clarification-text {
-  display: flex;
-  flex-direction: row 
-  flex-basis: calc(100% / 4);
+.scroll-subtitle {
 }
 
-.priority-list .subtitle {
- flex-direction: row 
-  flex-basis: calc(100% / 4);
-}
-.priority-list .text {
-  flex-basis: calc(100% / 4);
-  margin-top: 
-  margin-left: 
-  flex-direction: row 
+.clarification-text {
 }
 
 .subtitle {
   padding-top: 94px;
-  margin-top: 0px;
   font-weight: 700;
   line-height: 1.14;
   font-size: 14px;
@@ -240,7 +223,6 @@ img {
 }
 /* Текстовый контент к приемуществам работы */
 .text {
-  margin: 0px;
   font-weight: 400;
   line-height: 1.71;
   color: var(--secondary-color);
@@ -249,7 +231,6 @@ img {
 /* Чем мы занмаемся */
 .activity-list {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
 }
 .subject {
@@ -264,7 +245,6 @@ img {
 /* Наша команда */
 .command-list {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
