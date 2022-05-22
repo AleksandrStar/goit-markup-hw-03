@@ -17,6 +17,8 @@
   /* Акцент цвета текста и фона*/
   --accent-color: #2196f3;
   --accent-color-hover: #188ce8;
+  /* Цвет линий*/
+  --card-line: #eeeeee;
   /* Переменная зазоров между карточками*/
   --filter-list-card: 30px;
 }
@@ -79,14 +81,11 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid rgb(13, 201, 35);
 }
 .section {
   padding-bottom: 94px;
-  background-color: aqua;
 }
 /* ------------- Шапка ------------- */
-/* Flexbox для header */
 .navigation-header-list {
   display: flex;
   align-items: center;
@@ -103,8 +102,7 @@ img {
   margin-left: 50px;
 }
 .main-nav {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+  border-bottom: 1px solid var(--card-line);
   display: flex;
   align-items: center;
 }
@@ -201,18 +199,17 @@ img {
 }
 /* ------------- Приемущества ------------- */
 /* Приемущества работы */
-
-.subtitle-text > {
+.subtitle-text {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
 }
-.priority-list {
+.subtitle-text .box {
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-basis: calc((100% - 30px) / 3);
 }
-
-.scroll-subtitle {
-}
-
-.clarification-text {
-}
-
 .subtitle {
   padding-top: 94px;
   font-weight: 700;
@@ -247,7 +244,9 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
+.photo-items-position {
+  outline: 1px solid var(--card-line);
+}
 .heading {
   padding-top: 94px;
   padding-bottom: 50px;
@@ -278,7 +277,6 @@ img {
   color: var(--secondary-color);
 }
 /* ------------- Портфолио -------------*/
-/* Flexbox для header */
 .filter-list {
   display: flex;
   flex-wrap: wrap;
@@ -296,16 +294,15 @@ img {
 .card-direction {
   padding: 0px 24px 20px;
 }
-.card .card-thumb {
-  border-bottom-style: solid;
-  border-bottom-width: 7px;
+.card {
+  outline: 1px solid var(--card-line);
 }
 .button-list {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
 }
-.button-list .button + .button {
+.button-list-list .button + .button {
   margin-left: 8px;
 }
 /* Кнопки фильтров из списка кнопок портфолио*/
