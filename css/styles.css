@@ -199,17 +199,13 @@ img {
 }
 /* ------------- Приемущества ------------- */
 /* Приемущества работы */
-.subtitle-text {
+.box {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-top: -10px;
 }
-.subtitle-text .box {
-  margin-left: 10px;
-  margin-top: 10px;
-  flex-basis: calc((100% - 30px) / 3);
+.subtitle-text {
+  flex-basis: calc((100% - 30px) / 4);
 }
+
 .subtitle {
   padding-top: 94px;
   font-weight: 700;
@@ -294,16 +290,16 @@ img {
 .card-direction {
   padding: 0px 24px 20px;
 }
-.card {
-  outline: 1px solid var(--card-line);
+.box-content-direction {
+  border: 1px solid var(--card-line);
 }
 .button-list {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin: 0px 280px;
 }
-.button-list-list .button + .button {
-  margin-left: 8px;
+.button-list .portfolio-btn + .portfolio-btn {
+  margin-left: ;
 }
 /* Кнопки фильтров из списка кнопок портфолио*/
 .portfolio-btn {
@@ -372,8 +368,6 @@ img {
 }
 /* Список контактов футера */
 .contacts-footer-list .email {
-  display: flex;
-  flex-direction: column;
   padding: 0px 0px 9px;
   line-height: 1.71;
   font-weight: 400;
