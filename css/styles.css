@@ -208,11 +208,12 @@ img {
 .priority-item {
   width: 270px;
 }
-.priority-item:not(last-child) {
+.priority-item:not(:last-child) {
   margin-right: var(--filter-list-card);
 }
 .priority-subtitle {
   font-weight: 700;
+  margin-bottom: 10px;
   line-height: 1.14;
   font-size: 14px;
   color: var(--basic-color);
@@ -237,7 +238,7 @@ img {
 .works-list {
   display: flex;
 }
-.works-item:not(last-child) {
+.works-item:not(:last-child) {
   margin-right: var(--filter-list-card);
 }
 /* ------------------ Команда ------------------ */
@@ -262,7 +263,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-item:not(last-child) {
+.team-item:not(:last-child) {
   margin-right: var(--filter-list-card);
 }
 .team-descr {
@@ -314,7 +315,7 @@ img {
   justify-content: center;
   margin-bottom: 50px;
 }
-.btn-item:not(last-child) {
+.btn-item:not(:last-child) {
   margin-right: 8px;
 }
 /* Контент и направление контента фильтрующигося списком портфолио */
@@ -329,13 +330,10 @@ img {
   margin-top: var(--filter-list-card);
   margin-left: var(--filter-list-card);
 }
-.portfolio-item {
-  background-color: var(--item);
-  border: 1px solid #eeeeee;
-  border-top: none;
-}
 .portfolio-content-direction {
   padding: 20px 24px;
+  border: 1px solid var(--card-line);
+  border-top: none;
 }
 .portfolio-content {
   margin-bottom: 4px;
@@ -370,7 +368,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
 }
-.footer-item:not(last-child) {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 /* Список контактов футера */
